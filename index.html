@@ -1,0 +1,1319 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png" />
+    <title>Home</title>
+
+    <!-- Style Begin-->
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+
+    <!-- Style End -->
+
+</head>
+<style>
+    @font-face {
+        font-family: 'megrimfont';
+        src: url('./assets/fonts/GABRWFFR.TTF');
+    }
+    @font-face {
+        font-family: 'Rubik';
+        src: url('./assets/fonts/Rubik-VariableFont_wght.ttf');
+    }
+    /* Navbar  BEGIN */
+
+    .navbar_logo{
+        /*  BAdbots */
+        font-family: 'megrimfont';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 71.7374px;
+        line-height: 72px;
+        /* or 100% */
+        color: #171717;
+        text-decoration: none;
+    }
+    .navbar_logo:hover{
+        text-decoration: none;
+        color: #171717;
+    }
+    .navbar_button{
+        background-color: #171717;
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 32px;
+        color:#FFFFFF;
+        padding: 5px 30px;
+        
+    }
+    
+    /* button animation */
+
+    .navbar_button, .mint_button {
+        display: inline-block;
+        text-transform: uppercase;
+        transition: all 0.3s;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+    }
+    .mint_button:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;       
+        z-index: -2;
+    }
+    .mint_button:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: #00A8EF;
+        transition: all 0.3s;
+        z-index: -1;
+    }
+
+    .mint_button:hover {
+        color: #fff;
+    }
+
+    .mint_button:hover:before {
+        width: 100%;
+    }
+
+
+
+    .navbar_button:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;       
+        z-index: -2;
+    }
+
+    .navbar_button:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: #00A8EF;
+        transition: all 0.3s;
+        z-index: -1;
+    }
+
+    .navbar_button:hover {
+        color: #fff;
+    }
+
+    .navbar_button:hover:before {
+        width: 100%;
+    }
+    .nav_menu{
+        display: none;
+    }
+
+
+    /* button animation */
+    @media only screen and (max-width:1366px){
+        .navbar_logo{
+            font-size: 64px;
+            line-height: 64px;
+        }
+        .navbar_button{
+            font-size: 14px;
+            line-height: 36px;
+        }
+    }
+    @media only screen and (max-width:780px){
+        .navbar_logo{
+            font-size: 64px;
+            line-height: 64px;
+        }
+        .fa-align-justify{
+            display: inline-block!important;
+        }
+    }
+    @media only screen and (max-width:576px){
+        .navbar_logo{
+            font-size: 36px;
+            line-height: 36px;
+        }
+    }
+    /* Navbar END */
+
+    /* main  Begin */
+    .font_default{
+        color:#171717;
+        font-size: 30px;
+        line-height: 47px;
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: normal;
+    }
+    .font_undefault{
+        color: #c1c1c1;
+        font-size: 30px;
+        line-height: 47px;
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: normal;
+    }
+    .font_bgdefault{
+        font-family: 'megrimfont';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 71.7374px;
+        line-height: 72px;
+        /* or 100% */
+        color: #c1c1c1;
+    }
+    .font_bgundefault{
+        font-family: 'megrimfont';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 71.7374px;
+        line-height: 72px;
+        /* or 100% */
+        color: #171717;
+    }
+    .font_general{
+        color:#171717;
+        font-size: 30px;
+        line-height: 40px;
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: normal;
+    }
+    .mint_button{
+        /* MINT */
+        padding: 5px 50px;
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 45.5686px;
+        line-height: 46px;
+        /* identical to box height, or 100% */
+        color: #FFFFFF!important;
+        border:solid 1px #fff;
+        background-color: #171717;
+        cursor: pointer;
+    }
+
+      /* button animation */
+    @media only screen and (max-width:1366px){
+        .font_default{
+            font-size: 24px;
+            line-height: 40px;
+        }
+        .font_undefault{
+            font-size: 24px;
+            line-height: 40px;
+        }
+        .font_bgdefault{
+            font-size: 64px;
+            line-height: 64px;
+        }
+        .font_bgundefault{
+            font-size: 64px;
+            line-height: 64px;
+        }
+        .font_general{
+            font-size: 24px;
+            line-height: 30px;
+        }
+        .mint_button{
+            font-size: 32px;
+            line-height: 46px;
+        }
+    }
+    @media only screen and (max-width:780px){
+            .font_default{
+            font-size: 18px;
+            line-height: 30px;
+        }
+        .font_undefault{
+            font-size: 18px;
+            line-height: 30px;
+        }
+        .font_bgdefault{
+            font-size: 48px;
+            line-height: 64px;
+        }
+        .font_bgundefault{
+            font-size: 48px;
+            line-height: 64px;
+        }
+        .font_general{
+            font-size: 18px;
+            line-height: 30px;
+        }
+        .mint_button{
+            font-size: 24px;
+            line-height: 36px;
+        }
+    }
+    @media only screen and (max-width:576px){
+        .font_default{
+            font-size: 12px;
+            line-height: 24px;
+        }
+        .font_undefault{
+            font-size: 12px;
+            line-height: 24px;
+        }
+        .font_bgdefault{
+            font-size: 32px;
+            line-height: 56px;
+        }
+        .font_bgundefault{
+            font-size: 32px;
+            line-height: 56px;
+        }
+        .font_general{
+            font-size: 12px;
+            line-height: 24px;
+        }
+     
+    }
+    .roadmap_title{
+        font-family: 'megrimfont';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 71.7374px;
+        line-height: 72px;
+        /* or 100% */
+        color: #171717;
+        margin-bottom: -100px;
+        z-index: 999;
+    }
+    .roadmap_title_back{
+        
+        width: 100%;
+        border-left: 49.0vw solid transparent;
+        border-right: 49.0vw solid transparent;
+        border-top: 150px solid #fff;
+    }
+
+    @media only screen and (max-width:1366px){
+        .roadmap_title{
+            font-size: 64px;
+            line-height: 64px;
+        }
+    }
+    @media only screen and (max-width:825px){
+        .roadmap_title_back{
+            border-left: 48vw solid transparent;
+            border-right: 48vw solid transparent;
+            border-top: 150px solid #fff;
+        }
+    }
+    @media only screen and (max-width:780px){
+        .roadmap_title{
+            font-size: 48px;
+            line-height: 64px;
+        }
+    }
+    @media only screen and (max-width:576px){
+        .roadmap_title{
+            font-size: 32px;
+            line-height: 56px;
+        }
+        .roadmap_title_back{
+            border-left: 47vw solid transparent;
+            border-right: 47vw solid transparent;
+            border-top: 150px solid #fff;
+        }
+    }
+    .roadmap{
+        width:100%;
+        background:#171717;
+    }
+
+    .top_title{
+        /* 1. ACTIVATE BOTS */
+        font-family: 'megrimfont';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 62.5px;
+        line-height: 167px;
+        /* identical to box height, or 267% */
+        color: #fff;
+        
+    }
+    .top_title_num{
+        color: #C1C1C1; 
+        font-size: 62.5px;
+    }
+    .dot_data{
+        margin-top: 35px;
+    }
+    .dot{
+        background: #FFFFFF;
+        box-shadow: 0px 0px 13px rgba(255, 255, 255, 0.53);
+        padding: 8px 18px;
+        border-radius: 50%;
+        border: solid 7px #000;
+    }
+    .top_data{
+        /* Phase one will begin with the activation of the Brobots. Activa */
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 37.5px;
+        line-height: 62px;
+        /* or 167% */
+        display: flex;
+        align-items: center;
+
+        color: #FFFFFF;
+    }
+    .roadmap_round{
+        border:solid 3px rgba(0, 0, 0, 0.0001);
+        box-shadow: 0px 0px 29px rgba(255, 255, 255, 0.53);
+        background-color: #959494;
+        border:solid 3px #e9e9e9;
+    }
+    @media only screen and (max-width:1366px){
+        .top_title{
+            font-size: 56px;
+            line-height: 78px;
+        }
+        .top_title_num{
+            font-size: 56px;
+            line-height: 78px;
+        }
+        .top_data{
+            font-size: 28px;
+            line-height: 40px;
+        }
+        .dot{
+            background: #FFFFFF;
+            box-shadow: 0px 0px 13px rgba(255, 255, 255, 0.53);
+            padding: 3px 13px;
+            border-radius: 50%;
+        }
+    }
+    @media only screen and (max-width:780px){
+        .top_title, .top_title_num{
+            font-size: 32px;
+            line-height: 48px;
+        }
+        .top_data{
+            font-size: 18px;
+            line-height: 24px;
+        }
+        .dot{
+            padding: 0px 10px;
+        }
+        .dot_data{
+            margin-top: 18px;
+        }
+    }
+    @media only screen and (max-width:576px){
+        .top_title, .top_title_num{
+            font-size: 26px;
+            line-height: 34px;
+        }
+        .top_data{
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+
+
+    .common_title{
+        /*  Coming soon to Solana   */
+        font-family: 'Rubik';
+        font-size: 125px;
+        line-height: 208px;
+        font-weight: 600;
+        /* or 167% */
+        display: flex;
+        align-items: center;
+        color: #171717;
+    }
+    .common_back{
+        background-image: url(./assets/images/common/back.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    @media only screen and (max-width:1366px){
+        .common_title{
+            font-family: 'Rubik';
+            font-size: 84px;
+            line-height: 150px;
+        }
+    }
+    @media only screen and (max-width:992px){
+        .common_title{
+            font-size: 56px;
+            line-height: 78px;
+            /* or 167% */
+        }
+    }
+    @media only screen and (max-width:780px){
+        .common_title{
+            font-size: 48px;
+            line-height: 78px;
+            /* or 167% */
+        }
+    }
+    @media only screen and (max-width:576px){
+        .common_title{
+            font-size: 32px;
+            line-height: 54px;
+            /* or 167% */
+        }
+    }
+    .communfity_text{
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 49.99px;
+        line-height: 62px;
+        color: #1F1D1D;
+    }
+    @media only screen and (max-width:1366px){
+        .communfity_text{
+            font-size: 36px;
+            line-height: 54px;
+        }
+    }
+    @media only screen and (max-width:780px){
+        .communfity_text{
+            font-size: 24px;
+            line-height: 32px;
+        }
+    }
+    @media only screen and (max-width:576px){
+        .communfity_text{
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+
+    .team_name{
+        font-family: 'Rubik';
+        font-size: 111.214px;
+        line-height: 185px;
+        /* or 167% */
+        color: #171717;
+    }
+    .team_desc{
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 50px;
+        line-height: 62px;
+        color: #171717;
+    }
+    @media only screen and (max-width:1366px){
+        .team_name{
+            font-size: 72px;
+            line-height: 90px;
+        }
+        .team_desc{
+            font-size: 32px;
+            line-height: 42px;
+        }
+    }
+    @media only screen and (max-width:780px){
+        .team_name{
+            font-size: 48px;
+            line-height: 60px;
+        }
+        .team_desc{
+            font-size: 24px;
+            line-height: 36px;
+        }
+    }
+    @media only screen and (max-width:576px){
+        .team_name{
+            font-size: 24px;
+            line-height: 30px;
+        }
+        .team_desc{
+            font-size: 18px;
+            line-height: 20px;
+        }
+    }
+
+    .question_page{
+        background-color: #1F1D1D;
+        padding: 50px 0px 100px 0px;
+        margin-top: 50px;
+    }
+
+    .question_title{
+        /* Frequently asked questions */
+        font-family: 'Rubik';
+        font-size: 83.3333px;
+        line-height: 104px;
+        color: #FFFFFF;
+    }
+
+    .accordion .card-header:after {
+        font-family: 'FontAwesome';  
+        content: "\f102";
+        float: right;
+        color: #fff!important;
+    }
+    .accordion .card-header.collapsed:after {
+        /* symbol for "collapsed" panels */
+        content: "\f103";
+        color: #fff!important;
+    }
+
+    .card-title{
+        color: #fff!important;
+    }
+    .card-header:first-child{
+        border-radius: 3%;
+    }
+    .card-header{
+        border: solid 1px #fff;
+        background: rgba(255, 255, 255, 0.0001);
+        box-shadow: 0px 0px 29px rgba(255, 255, 255, 0.53);
+        background-color: #959494;
+        font-family: 'Rubik';
+        font-size: 64px;
+        line-height: 84px;
+        border:solid 3px #e9e9e9;
+    }
+    .card-body >p{
+        color: #fff!important;
+        background: rgba(255, 255, 255, 0.0001);
+        font-family: 'Rubik';
+        font-size: 64px;
+        line-height: 84px;
+    }
+
+    @media only screen and (max-width:1366px){
+        .question_title{
+            font-size: 64px;
+            line-height: 64px; 
+        }
+        .card-header, .card-body >p{
+            font-size: 56px;
+            line-height: 64px;
+        }
+    }
+    @media only screen and (max-width : 992px){
+        .question_title{
+            font-size: 48px;
+            line-height: 48px; 
+        }
+        .card-header, .card-body >p{
+            font-size: 32px;
+            line-height: 48px;
+        }
+    }
+    @media only screen and (max-width : 576px){
+        .question_title{
+            font-size: 26px;
+            line-height: 40px; 
+        }
+        .card-header, .card-body >p{
+            font-size: 14px;
+            line-height: 25px;
+        }
+    }
+    
+    #toTopBtn {
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        display: none;
+        height: 40px;
+        width: 40px;
+        background-color: #85c13f;
+    }    
+    /* main  ENd */
+
+    /* Slider Begin */
+    
+    .swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    }
+    .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    }
+    .swiper-pagination-bullet{
+        padding: 1px 40px;
+        border-radius: inherit;
+        background-color: #171717;
+    }
+    /* End Slider */
+/* header */
+
+.header {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header li a {
+  display: block;
+  /* padding: 20px 20px; */
+  margin: 10px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f4;
+}
+
+.header .nav_logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right!important;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 880px) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 10px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+
+.image_effect{
+  position: relative;
+  
+}
+
+
+.image_effect:before, .image_effect:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 25px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 35px 20px #777;
+  -moz-box-shadow: 0 35px 20px #777;
+  box-shadow: 0 35px 20px #777;
+  -webkit-transform: rotate(-8deg);
+  -moz-transform: rotate(-8deg);
+  -o-transform: rotate(-8deg);
+  -ms-transform: rotate(-8deg);
+  transform: rotate(-8deg);
+}
+.image_effect:after
+{
+  -webkit-transform: rotate(8deg);
+  -moz-transform: rotate(8deg);
+  -o-transform: rotate(8deg);
+  -ms-transform: rotate(8deg);
+  transform: rotate(8deg);
+  right: 10px;
+  left: auto;
+}
+.image_effect:hover{
+    box-shadow: 0px 20px 40px rgba(0,0,0,0.4);
+    transform: scale(1.05,1.05);
+    transition: 0.3s;
+}
+
+
+
+</style>
+<body>
+        <header class="header container-fluid">
+            <div class="mt-3">
+                <a href="" class="navbar_logo">BAdbots</a>
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                <ul class="menu">
+                <li><a href="#" class="navbar_button btn mr-5 d-inline-block">CONNECT WALLET</a></li>
+                <li><a href="#"><img src="./assets/images/twitter_black_icon.png" class=""></a></li>
+                <li><a href="#"><img src="./assets/images/discord_black_icon.png" class=""></a></li>
+                </ul>
+            </div>
+        </header>
+        <div style="height: 100px;"></div>
+        
+    <section class="container-fluid p-4">
+        <div class="row">
+            <div class="col-md-7 d-flex align-items-center wow fadeInRight">
+                <div class="">
+                    <div>
+                        <span class="font_default">High quality</span><span class="font_undefault"> 3D NFTs</span> <span class="font_default">made with</span> <span class="font_undefault">150+</span> <span class="font_default">unique traits</span>
+                    </div>
+                    <div class="mt-5">
+                        <span class="font_bgdefault">MEET THE</span> &nbsp;&nbsp;&nbsp;<span class="font_bgundefault">BADBOTS</span> 
+                    </div>
+                    <div class="mt-5">
+                        <span class="font_general">
+                            8,888 unique Badbots in the Metaverse, waiting to be claimed by their real world doubles. The Badbots are coming, you can either join them, or get left behind.
+                        </span>
+                    </div>
+                    <div class="col-12 text-center">
+                        <a class="mint_button btn mt-5">MINT</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 mt-md-0 mt-5 wow fadeInLeft">
+                <img src="./assets/images/Bot1.png" class="w-100">
+            </div>
+        </div>
+    </section>
+
+    <!-- Slider -->
+    <section class="container-fluid p-4">
+        <div class="row wow fadeInRight">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(./assets/images/slider/1.png)"></div>
+                    <div class="swiper-slide" style="background-image:url(./assets/images/slider/2.png)"></div>
+                    <div class="swiper-slide" style="background-image:url(./assets/images/slider/3.png)"></div>
+                    <div class="swiper-slide" style="background-image:url(./assets/images/slider/4.png)"></div>
+                    <div class="swiper-slide" style="background-image:url(./assets/images/slider/5.png)"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <!-- ENd Slider -->
+    <div class="col-12 text-center d-flex justify-content-center">
+        <span class="roadmap_title wow fadeInUp">The ROADMAP</span>
+    </div>
+    <section class="roadmap pb-5 wow fadeInUp">
+        <div class="roadmap_title_back"></div>
+        <div class="top_one container-fluid p-4 mt-5">
+            <div class="row p-4">
+                <div class="col-md-9">
+                    <div class="col-12 row rounded roadmap_round pb-4 wow zoomInLeft">
+                        <div class="col-1 d-inline dot_data">
+                            <span class="dot"></span>
+                        </div>
+                        <div class="col-11 d-inline ">
+                            <div class="">
+                                <span class="top_title_num">1. </span><span class="top_title">ACTIVATE BOTS</span>
+                            </div>
+                            <div class="top_data">
+                                Phase one will begin with the activation of the Badbots. Activation will take place on the 15th of November. 
+                                <br><br>
+                                The lovely people at Magic Eden have agreed to oversee the activation and make sure everything goes smoothly. You’ll be able to mint from their launchpad at 9PM EST.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex align-items-center wow zoomInRight">
+                    <img src="./assets/images/main/OnButton1.png" class="w-100">
+                </div>
+            </div>
+            <div class="row mt-1 p-4">
+                <div class="col-md-9">
+                    <div class="col-12 row rounded roadmap_round pb-4 wow zoomInLeft">
+                        <div class="col-1 d-inline dot_data">
+                            <span class="dot"></span>
+                        </div>
+                        <div class="col-11 d-inline ">
+                            <div class="">
+                                <span class="top_title_num">2. </span><span class="top_title">AFTER ACTIVATION</span>
+                            </div>
+                            <div class="top_data">
+                                Immediately after minting we will add 100 SOL to the community wallet and you will be able to trade your bots on the Magic Eden marketplace. We will also list the bots on Rarity Tools. Upon full minting, the Bot Factory will randomly drop 5 superrare bots into holder wallets. Exciting! 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex align-items-center wow zoomInRight">
+                    <img src="./assets/images/main/Diamond1.png" class="w-100">
+                </div>
+            </div>
+            <div class="row mt-1 p-4">
+                <div class="col-md-9">
+                    <div class="col-12 row rounded roadmap_round pb-4 wow zoomInLeft">
+                        <div class="col-1 d-inline dot_data">
+                            <span class="dot"></span>
+                        </div>
+                        <div class="col-11 d-inline ">
+                            <div class="">
+                                <span class="top_title_num">3. </span><span class="top_title">CHARITY INITIATIVES </span>
+                            </div>
+                            <div class="top_data">
+                                We have selected three charities to support long term via the Brobots project. Blesma, SpecialEffect, and Revolution Robotics. Upon full minting, a $10,000 donation will be made to all three charities. View more info about the incredible  work they do to change lives through technology & robotics.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex align-items-center wow zoomInRight">
+                    <img src="./assets/images/main/Charity1.png" class="w-100">
+                </div>
+            </div>
+            <div class="row mt-1 p-4">
+                <div class="col-md-9">
+                    <div class="col-12 row rounded roadmap_round pb-4 wow zoomInLeft">
+                        <div class="col-1 d-inline dot_data">
+                            <span class="dot"></span>
+                        </div>
+                        <div class="col-11 d-inline ">
+                            <div class="">
+                                <span class="top_title_num">4. </span><span class="top_title">COMMUNITY BUILDING </span>
+                            </div>
+                            <div class="top_data">
+                                Following the launch phase, we will spend time and resources nurturing and growing our community. From rewarding our early adopters, to welcoming newcomers, we plan to ensure  that the Brobots community is an exciting and inclusive one  to be a part of for many years to come.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex align-items-center wow zoomInRight">
+                    <img src="./assets/images/main/Community1.png" class="w-100">
+                </div>
+            </div>
+            <div class="row mt-1 p-4">
+                <div class="col-md-9">
+                    <div class="col-12 row rounded roadmap_round pb-4 wow zoomInLeft">
+                        <div class="col-1 d-inline dot_data">
+                            <span class="dot"></span>
+                        </div>
+                        <div class="col-11 d-inline ">
+                            <div class="">
+                                <span class="top_title_num">5. </span><span class="top_title">THE FUTURE</span>
+                            </div>
+                            <div class="top_data">
+                                In future we plan to release  a follow up to the original Brobots collection. We won’t give too much away, but we intend to explore a variety of concepts, and aim to build out Botworld with all sorts of cool and interesting characters and animals, not just Bros! Keep your eyes peeled!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex align-items-center wow zoomInRight">
+                    <img src="./assets/images/main/Future1.png" class="w-100">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="common mt-5 container-fluid p-0">
+        <div class="common_title col-12 justify-content-center wow zoomInUp">
+            Coming soon to Solana
+        </div>
+        <div class="common_back col-12 mt-5">
+            <div class="row mt-5 pt-5">
+                <div class="col-md-4 p-0 wow fadeInLeft">
+                    <img src="./assets/images/common/BOT2.png" class="w-100">
+                </div>
+                <div class="col-md-4 p-0 wow fadeInUp">
+                    <img src="./assets/images/common/BOT21.png" class="w-100">
+                </div>
+                <div class="col-md-4 p-0 wow fadeInRight">
+                    <img src="./assets/images/common/Bot31.png" class="w-100">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid p-4 wow fadeInUp">
+        <div class="common_title col-12 justify-content-center wow fadeInLef">
+            Join the community
+        </div>
+        <div class="row">
+            <div class="col-md-7 col-12 d-flex align-items-center communfity_text">
+                <div>
+                    <div class="wow fadeInLef">
+                        The Bagbots Discord community has already grown to 5000 members!
+                    </div>
+                    <br>
+                    <div class="wow fadeInLef">
+                        Join the community to get all the latest news and announcements and be a part of the Badbots revolution.
+                    </div>
+                       
+                    <div class="col-12 wow fadeInLef">
+                        <a class="mint_button btn mt-5">Join Discord</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 col-12 mt-md-0 mt-5">
+                <div class="row mt-1 wow fadeInLeft">
+                    <div class="col-3 pl-0">
+                        <img src="./assets/images/community/1.png" class="w-100 image_effect">
+                    </div>
+                    <div class="col-3 pl-0">
+                        <img src="./assets/images/community/2.png" class="w-100 image_effect">
+                    </div>
+                    <div class="col-3 pl-0">
+                        <img src="./assets/images/community/3.png" class="w-100 image_effect">
+                    </div>
+                    <div class="col-3 pl-0">
+                        <img src="./assets/images/community/4.png" class="w-100 image_effect">
+                    </div>
+                </div>
+                <div class="row mt-3 wow fadeInRight">
+                    <div class="col-3 pl-0">
+                        <img src="./assets/images/community/5.png" class="w-100 image_effect">
+                    </div>
+                    <div class="col-3 pl-0">
+                        <img src="./assets/images/community/6.png" class="w-100 image_effect">
+                    </div>
+                    <div class="col-3 pl-0">
+                        <img src="./assets/images/community/7.png" class="w-100 image_effect">
+                    </div>
+                    <div class="col-3 pl-0">
+                        <img src="./assets/images/community/8.png" class="w-100 image_effect">
+                    </div>
+                </div>
+                <div class="row mt-3 wow fadeInLeft">
+                    <div class="col-3 pl-0">
+                        <img src="./assets/images/community/9.png" class="w-100 image_effect">
+                    </div>
+                    <div class="col-3 pl-0">
+                        <img src="./assets/images/community/10.png" class="w-100 image_effect">
+                    </div>
+                    <div class="col-3 pl-0">
+                        <img src="./assets/images/community/11.png" class="w-100 image_effect">
+                    </div>
+                    <div class="col-3 pl-0">
+                        <img src="./assets/images/community/12.png" class="w-100 image_effect">
+                    </div>
+                </div>
+                <div class="row mt-3 wow fadeInRight">
+                    <div class="col-3 pl-0">
+                        <img src="./assets/images/community/13.png" class="w-100 image_effect">
+                    </div>
+                    <div class="col-3 pl-0">
+                        <img src="./assets/images/community/14.png" class="w-100 image_effect">
+                    </div>
+                    <div class="col-3 pl-0">
+                        <img src="./assets/images/community/15.png" class="w-100 image_effect">
+                    </div>
+                    <div class="col-3 pl-0">
+                        <img src="./assets/images/community/16.png" class="w-100 image_effect">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid p-4">
+        <div class="common_title col-12 justify-content-center wow zoomInUp">
+            Meet the team
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-12 d-flex align-items-center wow fadeInLeft ">
+                <img src="./assets/images/team/1.png" class="w-100 image_effect">
+            </div>
+            <div class="col-md-7 col-12 wow fadeInRight">
+                <div class="team_name mtmd-0 mt-3">
+                    Don
+                </div>
+                <div class="team_desc">
+                    Don is the Badbots team leader, and calls the shots with the help of his experienced team. He works so hard that legend has it he has never shut down or entered sleep mode!
+                </div>
+            </div>
+            <div class="col-md-1">
+
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-3 col-12 d-flex align-items-center wow fadeInLeft">
+                <img src="./assets/images/team/2.png" class="w-100 image_effect">
+            </div>
+            <div class="col-md-7 col-12 wow fadeInRight">
+                <div class="team_name mtmd-0 mt-3">
+                    G
+                </div>
+                <div class="team_desc">
+                    G is Don’s right hand man, and long term business associate. G keeps the peace in the community, and ensures operations are running smoothly. Just don’t talk to him before his morning coffee.
+                </div>
+            </div>
+            <div class="col-md-1">
+
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-3 col-12 d-flex align-items-center wow fadeInLeft">
+                <img src="./assets/images/team/3.png" class="w-100 image_effect">
+            </div>
+            <div class="col-md-7 col-12 wow fadeInRight">
+                <div class="team_name mtmd-0 mt-3">
+                    Yellow
+                </div>
+                <div class="team_desc">
+                    Yellow is a nice bot that just wants the best for everyone. If you ask him kindly, he’s likely to go above and beyond to help you out, so if you do need any help, Yellow is your guy! 
+                </div>
+            </div>
+            <div class="col-md-1">
+
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-3 col-12 d-flex align-items-center wow fadeInLeft">
+                <img src="./assets/images/team/4.png" class="w-100 image_effect">
+            </div>
+            <div class="col-md-7 col-12 wow fadeInRight">
+                <div class="team_name mtmd-0 mt-3">
+                    Mole
+                </div>
+                <div class="team_desc">
+                    Mole is the little brother of the group. He’s here to watch, help out, and learn a thing or two. He’s likely to be behind the scenes helping the team, but will also be active in the community too! 
+                </div>
+            </div>
+            <div class="col-md-1">
+
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-3 col-12 d-flex align-items-center wow fadeInLeft">
+                <img src="./assets/images/team/5.png" class="w-100 image_effect">
+            </div>
+            <div class="col-md-7 col-12 wow fadeInRight">
+                <div class="team_name mtmd-0 mt-3">
+                    Goldie
+                </div>
+                <div class="team_desc">
+                    No one really knows how the Badbots came to be, other than Goldie, and he has kept the secret safe his entire life. He is the first and oldest active bot and spends most of his time away from the other bots, working on upgrades.
+                </div>
+            </div>
+            <div class="col-md-1">
+
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid question_page">
+        <div class="question_title col-12 text-center pt-5 wow fadeInLeft">
+            Frequently asked questions
+        </div>
+        <div class="col-12 mt-5">
+            <!--Accordion wrapper-->
+                <div id="accordion" class="accordion wow fadeInLeft">
+                    <div class="cards mb-0">
+                        <div class="card-header mt-4 rounded collapsed wow zoomInUp" data-toggle="collapse" href="#collapseOne">
+                            <a class="card-title">
+                                What is the mint price?
+                            </a>
+                        </div>
+                        <div id="collapseOne" class="card-body collapse" data-parent="#accordion" >
+                            <p>
+                                The mint price is 2 SOL.
+                            </p>
+                        </div>
+                        <div class="card-header mt-4 rounded collapsed wow zoomInUp" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                            <a class="card-title">
+                                When can I mint a Badbot?
+                            </a>
+                        </div>
+                        <div id="collapseTwo" class="card-body collapse" data-parent="#accordion" >
+                            <p>
+                                The mint date is not yet confirmed. We're hoping to announce this soon!
+                            </p>
+                        </div>
+                        <div class="card-header mt-4 rounded collapsed wow zoomInUp" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                            <a class="card-title">
+                                When will I get my Badbot? 
+                            </a>
+                        </div>
+                        <div id="collapseThree" class="collapse" data-parent="#accordion" >
+                            <div class="card-body">
+                                <p>
+                                    You will receive your Badbot immediately after mint.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card-header mt-4 rounded collapsed wow zoomInUp" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                            <a class="card-title">
+                                What wallets can I use?
+                            </a>
+                        </div>
+                        <div id="collapseFour" class="collapse" data-parent="#accordion" >
+                            <div class="card-body">
+                                <p>
+                                    Phantom and Sollet
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-header mt-4 rounded collapsed wow zoomInUp" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                            <a class="card-title">
+                                Who are you?
+                            </a>
+                        </div>
+                        <div id="collapseFive" class="collapse" data-parent="#accordion" >
+                            <div class="card-body">
+                                <p>
+                                    The Badbots team is a collective of talent with vast experience in the NFT and 3D space. With many years of experience in marketing, development and design, we decided to join forces to work on a project that would be a representation of our collective talents, and be something that both ourselves and our community can truly be proud of. The end result was the Badbots!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            <!-- Accordion wrapper -->
+        </div>
+    </section>
+    <button id="toTopBtn" class="btn float-right" type="button" style="display: inline-block;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+    </button>
+</body>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+<script src="./assets/js/wow.js"></script>
+<script type="text/babel">
+var swiper = new Swiper('.swiper-container', {
+  pagination: '.swiper-pagination',
+  effect: 'coverflow',
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: 'auto',
+  coverflow: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows : true
+  },
+  loop: true
+});
+</script>
+
+<script>
+        $(document).ready(function(){
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 10) {
+                $('#toTopBtn').fadeIn();
+            } else {
+                $('#toTopBtn').fadeOut();
+            }
+        });
+        // scroll body to 0px on click
+        $('#toTopBtn').click(function () {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 400);
+            return false;
+        });
+    });
+</script>
+</html>
